@@ -20,10 +20,10 @@ export default class Surprise extends React.Component {
 
     render() {
         if (this.state.display === 'button') {
-            return <SurpriseButton onClick={event => this.showImage()}/>;  // FROM ABOVE BUTTON LIVES IN SURPRISEBUTTON
+            return <SurpriseButton onClick={event => this.showImage()}/>;  // FROM ABOVE BUTTON LIVES IN SURPRISEBUTTON / ON CLICK RUN SHOWIMAGE FUNCTION
         }
         else if (this.state.display === 'image') {
-            return <SurpriseImage />;  // FROM ABOVE
+            return <SurpriseImage />;  // FROM ABOVE GOES TO SURPRISE IMAGE AND DISPLAYS
         }
     }
 }
